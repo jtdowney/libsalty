@@ -14,6 +14,6 @@ defmodule Salty.Supervisor do
       # worker(Salty.Server, [], restart: :transient)
     ]
 
-    supervise(children, strategy: :one_for_one)
+    Supervisor.init(children, strategy: :one_for_one)
   end
 end
