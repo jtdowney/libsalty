@@ -27,8 +27,8 @@ defmodule Salty.Mixfile do
 
   defp deps do
     [
-      {:ex_doc, "~> 0.14", only: :dev},
-      {:elixir_make, "~> 0.4", runtime: false}
+      {:ex_doc, "~> 0.22.2", only: :dev},
+      {:elixir_make, "~> 0.6", runtime: false}
     ]
   end
 
