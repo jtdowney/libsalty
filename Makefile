@@ -12,7 +12,7 @@ ERL_CFLAGS ?= -I$(ERL_EI_INCLUDE_DIR)
 ERL_LDFLAGS ?= -L$(ERL_EI_LIBDIR)
 
 CFLAGS ?= -O2 -Wall -Wextra
-LDFLAGS += -fPIC -shared -lsodium -lei -lerl_interface
+LDFLAGS += -fPIC -shared -lsodium -lei
 
 ifeq ($(CROSSCOMPILE),)
 CFLAGS += -I/usr/local/include/sodium
